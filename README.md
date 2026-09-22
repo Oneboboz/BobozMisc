@@ -1,22 +1,25 @@
 # BobozMisc
 
-个人杂项仓库，用于集中保存小型脚本、补丁、配置、实验代码和临时工具。
+个人杂项工具库，用于集中保存小型脚本、补丁、配置、实验代码和临时工具。
 
-## 目录结构
+这个仓库用于承载那些“值得保存，但没必要单独建立一个仓库”的内容。
+
+## 目录
 
 ```text
 .
 ├─ catgpt/       # CatGPT / AI 网关相关补丁与工具
-├─ android/      # Android / Termux 相关小工具
-├─ esp32/        # ESP32 / MCU 实验与脚本
+├─ android/      # Android / APK 相关小工具
+├─ esp32/        # ESP32 / Arduino / ESP-IDF
 ├─ windows/      # Windows / PowerShell / BAT
 ├─ termux/       # Termux 专用脚本
 ├─ scripts/      # 通用脚本
 ├─ patches/      # 通用源码补丁
-└─ tools/        # 其他小工具
+├─ tools/        # 其他小工具
+└─ archive/      # 已归档或实验性内容
 ```
 
-## 当前内容
+## 已收录
 
 ### CatGPT
 
@@ -31,13 +34,13 @@
 - `tool_choice=required` 导致二次工具调用
 - `list_files → list_files → list_files` 这类循环
 
-详细说明见：
+详细说明：
 
-[`catgpt/toolcalling-loop-fix-v2/README.md`](catgpt/toolcalling-loop-fix-v2/README.md)
+[catgpt/toolcalling-loop-fix-v2/README.md](catgpt/toolcalling-loop-fix-v2/README.md)
 
-## 文件命名建议
+## 文件组织
 
-小脚本尽量使用清晰的项目目录：
+多文件工具：
 
 ```text
 category/
@@ -49,6 +52,30 @@ category/
 
 单文件工具可以直接放在对应分类目录。
 
+## 命名建议
+
+默认使用小写 `kebab-case`：
+
+```text
+fastboot-helper.ps1
+termux-network-test.sh
+catgpt-toolcalling-fix
+```
+
 ## 原则
 
-这个仓库以“可直接拿来用”为目标。能独立运行的小工具尽量附带 README 和使用方法；实验性内容可以保留，但要注明适用环境。
+这个仓库以“可直接拿来用”为目标。
+
+实验性内容可以保留，但 README 应注明：
+
+- 目标软件 / 硬件
+- 测试环境
+- 使用方法
+- 已知限制
+- 是否具有破坏性操作
+
+第三方代码必须保留其原始许可证和来源要求。
+
+## License
+
+仓库提供 MIT License；但第三方项目、复制或修改的代码可能受其原始许可证约束，以对应目录中的许可证和上游项目说明为准。
