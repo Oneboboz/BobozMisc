@@ -1,0 +1,10 @@
+idf_component_register(
+    SRCS
+        "main.cpp"
+        "llm.cpp"
+        "dot_q4_pie.S"
+        "model_data.cpp"
+        "tok_data.cpp"
+    INCLUDE_DIRS
+        "."
+)
