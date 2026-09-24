@@ -76,6 +76,12 @@ catgpt-toolcalling-fix
 
 第三方代码必须保留其原始许可证和来源要求。
 
+## ESP32-S3 English Essay LLM
+
+`esp32/esp32s3-english-essay-llm/`
+
+纯离线 ESP32-S3 英语作文实验：复用 TinyTalk-2 / TinyStories-Instruct 8M 的 GPT-Neo Q4_0 + PIE SIMD 推理链，串口输入英文题目，直接在 S3 本地生成短文。包含模型转换、可选英语作文 SFT、数据集验证及 ESP-IDF / PlatformIO 工程。
+
 ## License
 
 仓库提供 MIT License；但第三方项目、复制或修改的代码可能受其原始许可证约束，以对应目录中的许可证和上游项目说明为准。
