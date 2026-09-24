@@ -85,3 +85,15 @@ catgpt-toolcalling-fix
 ## License
 
 仓库提供 MIT License；但第三方项目、复制或修改的代码可能受其原始许可证约束，以对应目录中的许可证和上游项目说明为准。
+
+## ESP32-S3 English-Chinese Translator
+
+`esp32/esp32s3-en-zh-translator/`
+
+ESP32-S3 离线英汉翻译器项目规划与开发资料：整合现有本地英汉电子词典、词形还原/英语句法分析方向，以及 `lspr98/conformer-stt-s3` 的 ESP32-S3 Conformer 英语 ASR 路线。目标是最终实现“英语语音 → 英文文本 → 词形/句法分析 → 中文翻译”的离线设备。
+
+- [项目说明](esp32/esp32s3-en-zh-translator/README.md)
+- [当前进度](esp32/esp32s3-en-zh-translator/STATUS.md)
+- [系统架构](esp32/esp32s3-en-zh-translator/ARCHITECTURE.md)
+- [开发任务书](esp32/esp32s3-en-zh-translator/DEVELOPER_TASKS.md)
+- [上游 ASR](esp32/esp32s3-en-zh-translator/UPSTREAM.md)
